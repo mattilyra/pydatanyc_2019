@@ -6,6 +6,11 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
+jupyter = "*"
+torch = "*"
+torchvision = "*"
+jupyterlab = "*"
+scikit-learn = "*"
 
 [requires]
 python_version = "3.7"
