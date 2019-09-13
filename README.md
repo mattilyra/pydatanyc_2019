@@ -1,3 +1,17 @@
+# Introduction
+
+Deep, pretrained neural networks have in the past roughly 2 years become a staple in the NLP community. The driver for this development has been the success of language modelling as a pretraining task as well as new and improved network architectured and training methods. State-of-art models like BERT, GPT-2, XLM or AWD-LSTM all use some kind of a language modelling task to first train a network, which can then be used to perform other downstream tasks.
+
+In this tutorial I will cover the ideas behind these methods. A rough outline of the tutorial is as follows:
+
+- Neural network basics (10-15 minutes)
+- Recurrent neural networks (10-15 minutes)
+- Attention and language model pretraining (30 minutes)
+- The Transformer model (30 minutes)
+
+I aim to focus on practical applications (document classification, sequence labelling) with real world examples. All associated code is available on Github as github.com/mattilyra/pydatanyc_2019
+
+
 # PyData NYC 2019 Tutorial on Neural Networks for Natural Language Processing
 
 ## Tutorial Overview

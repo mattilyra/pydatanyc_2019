@@ -11,6 +11,12 @@ torch = "*"
 torchvision = "*"
 jupyterlab = "*"
 scikit-learn = "*"
+gensim = "*"
+tensorboard = "*"
+future = "*"
+graphviz = "*"
+matplotlib = "*"
+seaborn = "*"
 
 [requires]
 python_version = "3.7"
