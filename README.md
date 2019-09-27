@@ -30,6 +30,9 @@ I aim to focus on practical applications (document classification, sequence labe
 
 You can use `docker` if you have it installed, if not you can also you `pipenv` to manage a local environment. For complete installation instructions for `pipenv` please refer to the `pipenv` documentation [here](https://docs.pipenv.org/en/latest/install/#installing-pipenv). Please make sure you are using Python 3.7.
 
+
+PLEASE KEEP IN MIND THAT THE INSTALLATION WILL TAKE SOME TIME, YOU WILL NEED TO THIS BEFORE THE TUTORIAL.
+
 ### docker
 
 Build the image, this will build the image (based on python 3.7) and install all required dependencies, including all the data required for the experiments.
@@ -57,7 +60,7 @@ docker run -it -v $(pwd):/usr/src/app/ pydatanyc:latest jupyterlab
 ```bash
 git clone https://github.com/mattilyra/pydatanyc_2019
 cd pydatanyc_2019
-pipenv install
+pipenv install --verbose
 ```
 
 ## Datasets

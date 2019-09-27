@@ -12,11 +12,11 @@ torchvision = "*"
 jupyterlab = "*"
 scikit-learn = "*"
 gensim = "*"
-tensorboard = "*"
 future = "*"
 graphviz = "*"
 matplotlib = "*"
 seaborn = "*"
+pytorch-transformers = "*"
 
 [requires]
 python_version = "3.7"
