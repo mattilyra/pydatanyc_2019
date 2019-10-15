@@ -16,7 +16,12 @@ future = "*"
 graphviz = "*"
 matplotlib = "*"
 seaborn = "*"
-pytorch-transformers = "*"
+spacy = "*"
+rise = "*"
+jupyter-contrib-nbextensions = "*"
+transformers = "*"
+ipdb = "*"
+networkx = "*"
 
 [requires]
 python_version = "3.7"
