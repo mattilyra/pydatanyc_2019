@@ -33,28 +33,6 @@ You can use `docker` if you have it installed, if not you can also you `pipenv` 
 
 PLEASE KEEP IN MIND THAT THE INSTALLATION WILL TAKE SOME TIME, YOU WILL NEED TO THIS BEFORE THE TUTORIAL.
 
-### docker
-
-Build the image, this will build the image (based on python 3.7) and install all required dependencies, including all the data required for the experiments.
-
-```bash
-chmod +x ./get_data.sh
-./get_data.sh
-docker build -t pydatanyc:latest ./
-```
-
-Start jupyterlab in a docker container
-
-```bash
-docker run -it -v $(pwd):/usr/src/app/ pydatanyc:latest jupyterlab
-```
-
-
-#### Errors
-
-- [Errno 28] No space left on device
-    - the docker deamon has run out of space, you need to clear old docker images / containers etc. from the system, a nuclear option for doing this is to run `docker system prune` but BE CAREFUL you will lose stopped containers.
-
 
 ### pipenv
 ```bash
@@ -62,6 +40,15 @@ git clone https://github.com/mattilyra/pydatanyc_2019
 cd pydatanyc_2019
 pipenv install --verbose
 ```
+
+### conda
+
+_I discovered slightly too late that the `pipenv` installation method does not work on AWS EC2 GPU instances._ If you want to run the examples on a GPU instance you can simply run the following to install the required dependencies. Be aware that the version of the required `cudatoolkit` depends on the exact hardware / driver / cuda version you have.
+
+`conda create -n pydatanyc python=3.7 scikit-learn gensim jupyterlab pandas`
+`conda activate pydatanyc`
+`conda install pytorch cudatoolkit=10.0 -c pytorch`
+
 
 ## Datasets
 
