@@ -4,9 +4,8 @@ Deep, pretrained neural networks have in the past roughly 2 years become a stapl
 
 In this tutorial I will cover the ideas behind these methods. A rough outline of the tutorial is as follows:
 
-- Neural network basics (10-15 minutes)
-- Recurrent neural networks (10-15 minutes)
-- Attention and language model pretraining (30 minutes)
+- Neural network basics (15-20 minutes)
+- Recurrent neural networks (15-20 minutes)
 - The Transformer model (30 minutes)
 
 I aim to focus on practical applications (document classification, sequence labelling) with real world examples. All associated code is available on Github as github.com/mattilyra/pydatanyc_2019
@@ -21,8 +20,6 @@ I aim to focus on practical applications (document classification, sequence labe
   - Scheduler
   - Optimizer
 - Language and Recurrent Neural Networks
-- Attention
-- Memory Networks and Dynamic Memory Networks
 - The Transformer Model
 
 
@@ -39,23 +36,14 @@ PLEASE KEEP IN MIND THAT THE INSTALLATION WILL TAKE SOME TIME, YOU WILL NEED TO 
 git clone https://github.com/mattilyra/pydatanyc_2019
 cd pydatanyc_2019
 pipenv install --verbose
+pipenv run jupyter lab
 ```
 
 ### conda
 
 _I discovered slightly too late that the `pipenv` installation method does not work on AWS EC2 GPU instances._ If you want to run the examples on a GPU instance you can simply run the following to install the required dependencies. Be aware that the version of the required `cudatoolkit` depends on the exact hardware / driver / cuda version you have.
 
-`conda create -n pydatanyc python=3.7 scikit-learn gensim jupyterlab pandas`
+`conda create -n pydatanyc python=3.7`
 `conda activate pydatanyc`
+`conda install scikit-learn gensim jupyterlab pandas transformers ipywidgets -c conda-forge`
 `conda install pytorch cudatoolkit=10.0 -c pytorch`
-
-
-## Datasets
-
-
-# Usage
-
-If you're using `docker`, first start the container by
-
-```
-```

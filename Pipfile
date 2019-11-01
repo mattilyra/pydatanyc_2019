@@ -7,24 +7,17 @@ verify_ssl = true
 
 [packages]
 jupyter = "*"
-torch = "*"
-torchvision = "*"
 jupyterlab = "*"
 scikit-learn = "*"
 gensim = "*"
 future = "*"
-graphviz = "*"
-matplotlib = "*"
-seaborn = "*"
-rise = "*"
 jupyter-contrib-nbextensions = "*"
 transformers = "*"
 ipdb = "*"
-networkx = "*"
-torchtext = "*"
 spacy = "*"
 h5py = "*"
 fastai = "*"
+torch = "*"
 
 [requires]
 python_version = "3.7"
