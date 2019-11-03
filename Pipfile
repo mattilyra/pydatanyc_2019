@@ -18,6 +18,7 @@ spacy = "*"
 h5py = "*"
 fastai = "*"
 torch = "*"
+ipywidgets = "*"
 
 [requires]
 python_version = "3.7"
