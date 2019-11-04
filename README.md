@@ -25,7 +25,7 @@ I aim to focus on practical applications (document classification, sequence labe
 
 # Installation and Dependencies
 
-You can use `docker` if you have it installed, if not you can also you `pipenv` to manage a local environment. For complete installation instructions for `pipenv` please refer to the `pipenv` documentation [here](https://docs.pipenv.org/en/latest/install/#installing-pipenv). Please make sure you are using Python 3.7.
+You can use `docker` if you have it installed, if not you can also you `pipenv` to manage a local environment. For complete installation instructions for `pipenv` please refer to the `pipenv` documentation [here](docs.pipenv.org/en/latest/install/#installing-pipenv). Please make sure you are using Python 3.7.
 
 
 PLEASE KEEP IN MIND THAT THE INSTALLATION WILL TAKE SOME TIME, YOU WILL NEED TO THIS BEFORE THE TUTORIAL.
